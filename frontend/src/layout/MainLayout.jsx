@@ -7,8 +7,7 @@ import {
   FileText, 
   Settings, 
   LogOut, 
-  Menu,
-  Activity
+  Menu
 } from 'lucide-react';
 import GlobalSearch from '../components/GlobalSearch';
 
@@ -37,8 +36,10 @@ const MainLayout = () => {
         fixed inset-y-0 left-0 z-30 w-64 bg-slate-900 text-slate-300 transform transition-transform duration-300 ease-in-out lg:static lg:translate-x-0 flex flex-col
         ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}
       `}>
-        <div className="flex items-center justify-center h-16 bg-slate-950 border-b border-slate-800 shrink-0">
-          <Activity className="w-6 h-6 text-blue-500 mr-2" />
+        <div className="flex items-center justify-center h-16 bg-slate-950 border-b border-slate-800 shrink-0 px-4">
+          <div className="bg-white p-1 rounded-lg mr-3 shadow-sm">
+            <img src="/favicon-removebg-preview.png" alt="Logo" className="w-8 h-8 object-contain" />
+          </div>
           <span className="text-white font-bold text-lg tracking-wider">CMS</span>
         </div>
 

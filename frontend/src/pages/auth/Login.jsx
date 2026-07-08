@@ -7,7 +7,7 @@ import { useMutation } from '@tanstack/react-query';
 import api from '../../api/axios';
 import { useAuth } from '../../hooks/useAuth';
 import { toast } from 'react-hot-toast';
-import { Stethoscope } from 'lucide-react';
+
 
 const loginSchema = z.object({
   email: z.string().email('Invalid email address'),
@@ -41,8 +41,8 @@ const Login = () => {
     <div className="min-h-screen flex items-center justify-center bg-slate-50 p-4">
       <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md border border-slate-100">
         <div className="flex flex-col items-center mb-8">
-          <div className="bg-blue-50 p-3 rounded-full mb-4">
-            <Stethoscope className="w-8 h-8 text-blue-600" />
+          <div className="mb-4 bg-white p-2 rounded-xl shadow-sm border border-slate-100">
+            <img src="/favicon-removebg-preview.png" alt="Logo" className="w-16 h-16 object-contain" />
           </div>
           <h2 className="text-2xl font-bold text-slate-800">Welcome Back</h2>
           <p className="text-slate-500 text-sm mt-1">Sign in to manage your clinic</p>
